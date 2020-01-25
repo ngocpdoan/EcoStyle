@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".AboutActivity"></activity>
+        <activity android:name=".ListOfBrandsActivity"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,6 +22,28 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".WomnActivity"
+            android:theme="@style/AppTheme.Translucent"/>
+        <activity android:name=".PactActivity"
+            android:theme="@style/AppTheme.Translucent"/>
+        <activity android:name=".AbleActivity"
+            android:theme="@style/AppTheme.Translucent"/>
+        <activity android:name=".EverlaneActivity"
+            android:theme="@style/AppTheme.Translucent"/>
+        <activity android:name=".BodenActivity"
+            android:theme="@style/AppTheme.Translucent"/>
+        <activity android:name=".MadewellActivity"
+            android:theme="@style/AppTheme.Translucent"/>
+        <activity android:name=".OuterknownActivity"
+            android:theme="@style/AppTheme.Translucent"/>
+        <activity android:name=".PatagoniaActivity"
+            android:theme="@style/AppTheme.Translucent"/>
+        <activity android:name=".ReformationActivity"
+            android:theme="@style/AppTheme.Translucent"/>
+        <activity android:name=".TradlandsActivity"
+            android:theme="@style/AppTheme.Translucent"/>
+
     </application>
 
 </manifest>
