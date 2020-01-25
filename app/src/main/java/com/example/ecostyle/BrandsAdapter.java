@@ -5,6 +5,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Filter;
+import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -17,15 +19,16 @@ import com.example.ecostyle.R;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BrandsAdapter extends ArrayAdapter<Brands> {
+public class BrandsAdapter extends ArrayAdapter<Brands> implements Filterable {
     private Context myContext;
     private List<Brands> brandsList;
-
+    private List<Brands> brandsListFull;
     public BrandsAdapter(@NonNull Context context, ArrayList<Brands> listOfBrands)
     {
         super(context, 0 , listOfBrands);
         myContext = context;
         brandsList = listOfBrands;
+        brandsListFull = new ArrayList<>(listOfBrands);
     }
 
     @Override
@@ -48,4 +51,43 @@ public class BrandsAdapter extends ArrayAdapter<Brands> {
 
         return listItem;
     }
+    @Override
+    public Filter getFilter()
+    {
+        return listFilter;
+    }
+
+    private Filter listFilter = new Filter() {
+        @Override
+        protected FilterResults performFiltering(CharSequence constraint) {
+            List<Brands> filteredList = new ArrayList<>();
+
+            if (constraint == null || constraint.length() ==0)
+            {
+                filteredList.addAll(brandsListFull);
+            }
+            else{
+                String filterdPattern = constraint.toString().toLowerCase().trim();
+
+                for (Brands item : brandsListFull)
+                {
+                    if(item.getNameBrand().toLowerCase().contains(filterdPattern))
+                    {
+                        filteredList.add(item);
+                    }
+                }
+            }
+            FilterResults results = new FilterResults();
+            results.values = filteredList;
+
+            return results;
+        }
+
+        @Override
+        protected void publishResults(CharSequence constraint, FilterResults results) {
+                brandsList.clear();
+                brandsList.addAll((List)results.values);
+                notifyDataSetChanged();
+        }
+    };
 }
