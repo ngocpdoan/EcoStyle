@@ -6,7 +6,10 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.AdapterView;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.SearchView;
 
@@ -19,8 +22,6 @@ import java.util.Comparator;
 public class ListOfBrandsActivity extends AppCompatActivity {
     private ListView listView;
     private BrandsAdapter brandAdapter;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,56 +49,67 @@ public class ListOfBrandsActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if (brandList.get(position).getCost()== 1)
                 {
-                    Intent i = new Intent(getApplicationContext(), PactActivity.class);
+                    Intent i = new Intent(getApplicationContext(), MyWebView.class);
+                    i.putExtra("cost", brandList.get(position).getCost());
                     startActivity(i);
                 }
                 else if (brandList.get(position).getCost()== 2)
                 {
-                    Intent i = new Intent(getApplicationContext(), WomnActivity.class);
+                    Intent i = new Intent(getApplicationContext(), MyWebView.class);
+                    i.putExtra("cost", brandList.get(position).getCost());
                     startActivity(i);
                 }
                 else if (brandList.get(position).getCost()== 3)
                 {
-                    Intent i = new Intent(getApplicationContext(), AbleActivity.class);
+                    Intent i = new Intent(getApplicationContext(), MyWebView.class);
+                    i.putExtra("cost", brandList.get(position).getCost());
                     startActivity(i);
                 }
                 else if (brandList.get(position).getCost()== 4)
                 {
-                    Intent i = new Intent(getApplicationContext(), EverlaneActivity.class);
+                    Intent i = new Intent(getApplicationContext(), MyWebView.class);
+                    i.putExtra("cost", brandList.get(position).getCost());
                     startActivity(i);
                 }
                 else if (brandList.get(position).getCost()== 5)
                 {
-                    Intent i = new Intent(getApplicationContext(), PatagoniaActivity.class);
+                    Intent i = new Intent(getApplicationContext(), MyWebView.class);
+                    i.putExtra("cost", brandList.get(position).getCost());
                     startActivity(i);
                 }
                 else if (brandList.get(position).getCost()== 6)
                 {
-                    Intent i = new Intent(getApplicationContext(), MadewellActivity.class);
+                    Intent i = new Intent(getApplicationContext(), MyWebView.class);
+                    i.putExtra("cost", brandList.get(position).getCost());
                     startActivity(i);
                 }
                 else if (brandList.get(position).getCost()== 7)
                 {
-                    Intent i = new Intent(getApplicationContext(), OuterknownActivity.class);
+                    Intent i = new Intent(getApplicationContext(), MyWebView.class);
+                    i.putExtra("cost", brandList.get(position).getCost());
                     startActivity(i);
                 }
                 else if (brandList.get(position).getCost()== 8)
                 {
-                    Intent i = new Intent(getApplicationContext(), TradlandsActivity.class);
+                    Intent i = new Intent(getApplicationContext(), MyWebView.class);
+                    i.putExtra("cost", brandList.get(position).getCost());
                     startActivity(i);
                 }
                 else if (brandList.get(position).getCost()== 9)
                 {
-                    Intent i = new Intent(getApplicationContext(), BodenActivity.class);
+                    Intent i = new Intent(getApplicationContext(), MyWebView.class);
+                    i.putExtra("cost", brandList.get(position).getCost());
                     startActivity(i);
                 }
                 else if (brandList.get(position).getCost()== 10)
                 {
-                    Intent i = new Intent(getApplicationContext(), ReformationActivity.class);
+                    Intent i = new Intent(getApplicationContext(), MyWebView.class);
+                    i.putExtra("cost", brandList.get(position).getCost());
                     startActivity(i);
                 }
                 else {
-                    Intent i = new Intent(getApplicationContext(), ListOfBrandsActivity.class);
+                    Intent i = new Intent(getApplicationContext(), MyWebView.class);
+                    i.putExtra("cost", brandList.get(position).getCost());
                     startActivity(i);
                 }
             }

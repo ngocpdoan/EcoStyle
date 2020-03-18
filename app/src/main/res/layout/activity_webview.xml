@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="3dip"
+    android:paddingBottom="3dip"
+    android:paddingLeft="3dip"
+    android:paddingRight="3dip"
+    android:background="@drawable/pop_activity_base"
+    tools:context="com.example.ecostyle.WomnActivity">
+
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+
+        android:background="@drawable/pop_activity_base"></WebView>
+
+
+</FrameLayout>
