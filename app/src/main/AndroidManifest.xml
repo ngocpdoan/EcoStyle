@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ecostyle">
-
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
         <activity android:name=".AboutActivity"></activity>
+        <activity android:name=".ListOfBrandsActivity"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,6 +23,30 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".WomnActivity"
+            android:theme="@style/AppTheme.Translucent"/>
+        <activity android:name=".MyWebView"
+            android:theme="@style/AppTheme.Translucent"/>
+        <activity android:name=".PactActivity"
+            android:theme="@style/AppTheme.Translucent"/>
+        <activity android:name=".AbleActivity"
+            android:theme="@style/AppTheme.Translucent"/>
+        <activity android:name=".EverlaneActivity"
+            android:theme="@style/AppTheme.Translucent"/>
+        <activity android:name=".BodenActivity"
+            android:theme="@style/AppTheme.Translucent"/>
+        <activity android:name=".MadewellActivity"
+            android:theme="@style/AppTheme.Translucent"/>
+        <activity android:name=".OuterknownActivity"
+            android:theme="@style/AppTheme.Translucent"/>
+        <activity android:name=".PatagoniaActivity"
+            android:theme="@style/AppTheme.Translucent"/>
+        <activity android:name=".ReformationActivity"
+            android:theme="@style/AppTheme.Translucent"/>
+        <activity android:name=".TradlandsActivity"
+            android:theme="@style/AppTheme.Translucent"/>
+
     </application>
 
 </manifest>

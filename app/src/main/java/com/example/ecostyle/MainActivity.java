@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     private ViewPager2 viewPager2;
     private Handler sliderHandler = new Handler();
     private Button aboutButton;
+    private Button brandButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +34,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 openAboutActivity();
+            }
+        });
+
+        brandButton = (Button) findViewById(R.id.button);
+        brandButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openListOfBrandsActivity();
             }
         });
 
@@ -96,6 +105,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void openAboutActivity() {
         Intent intent = new Intent(this, AboutActivity.class);
+        startActivity(intent);
+    }
+
+    public void openListOfBrandsActivity() {
+        Intent intent = new Intent(this, ListOfBrandsActivity.class);
         startActivity(intent);
     }
 
