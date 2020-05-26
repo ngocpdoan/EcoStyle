@@ -100,7 +100,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="60dp"
         android:layout_marginBottom="170dp"
-        android:text="Shop Consciously by purchasing from brands that use ethical practices and prioritize sustainability." />
+        android:text="Shop consciously by purchasing from brands that use ethical practices and prioritize sustainability." />
 
 
     <TextView
@@ -111,7 +111,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="60dp"
         android:layout_marginBottom="90dp"
-        android:text="Visit local thrift stores to donate unwanted clothing and reduce further clothing waste by purchasing second hand clothes," />
+        android:text="Visit local thrift stores to donate unwanted clothing and reduce further clothing waste by purchasing second hand clothes." />
 
     <TextView
         android:id="@+id/textView10"
