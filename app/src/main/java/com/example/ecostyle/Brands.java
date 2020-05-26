@@ -20,19 +20,9 @@ public class Brands {
         return cost;
     }
 
-    public void setCost(int cost)
-    {
-        this.cost = cost;
-    }
-
     public int getIdImageDrawable()
     {
         return idImageDrawable;
-    }
-
-    public void setIdImageDrawable(int idImageDrawable)
-    {
-        this.idImageDrawable = idImageDrawable;
     }
 
     public String getNameBrand()
@@ -40,18 +30,9 @@ public class Brands {
         return nameBrand;
     }
 
-    public void setNameBrand(String nameBrand)
-    {
-        this.nameBrand = nameBrand;
-    }
-
     public String getCostBrand()
     {
         return costBrand;
     }
 
-    public void setCostBrand(String costBrand)
-    {
-        this.costBrand = costBrand;
-    }
 }
