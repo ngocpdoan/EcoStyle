@@ -32,14 +32,14 @@ public class ListOfBrandsActivity extends AppCompatActivity {
         final ArrayList<Brands> brandList = new ArrayList<>();
         brandList.add(new Brands(R.drawable.womn, "womn.", "$-$$", 2));
         brandList.add(new Brands(R.drawable.pact, "Pact", "$", 1));
-        brandList.add(new Brands(R.drawable.reformation, "Reformation", "$$$", 10));
-        brandList.add(new Brands(R.drawable.everlane, "Everlane", "$-$$", 4));
-        brandList.add(new Brands(R.drawable.boden, "Boden", "$$-$$$", 9));
-        brandList.add(new Brands(R.drawable.able, "Able", "$-$$", 3));
-        brandList.add(new Brands(R.drawable.tradlands, "Tradlands", "$$-$$$", 8));
-        brandList.add(new Brands(R.drawable.outer, "Outerknown", "$$-$$$", 7));
-        brandList.add(new Brands(R.drawable.pata, "Patagonia", "$$", 5));
-        brandList.add(new Brands(R.drawable.madewell, "Madewell", "$$", 6));
+        brandList.add(new Brands(R.drawable.reformation, "Reformation", "$$-$$$", 3));
+        brandList.add(new Brands(R.drawable.everlane, "Everlane", "$-$$", 2));
+        brandList.add(new Brands(R.drawable.boden, "Boden", "$$-$$$", 3));
+        brandList.add(new Brands(R.drawable.able, "Able", "$-$$", 2));
+        brandList.add(new Brands(R.drawable.tradlands, "Tradlands", "$$-$$$", 3));
+        brandList.add(new Brands(R.drawable.outer, "Outerknown", "$$-$$$", 3));
+        brandList.add(new Brands(R.drawable.pata, "Patagonia", "$-$$", 2));
+        brandList.add(new Brands(R.drawable.madewell, "Madewell", "$-$$", 2));
 
         brandAdapter = new BrandsAdapter(this, brandList);
         listView.setAdapter(brandAdapter);
@@ -47,69 +47,69 @@ public class ListOfBrandsActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                if (brandList.get(position).getCost()== 1)
+                if (brandList.get(position).getNameBrand().contains("Pact"))
                 {
                     Intent i = new Intent(getApplicationContext(), MyWebView.class);
-                    i.putExtra("cost", brandList.get(position).getCost());
+                    i.putExtra("name", brandList.get(position).getNameBrand());
                     startActivity(i);
                 }
-                else if (brandList.get(position).getCost()== 2)
+                else if (brandList.get(position).getNameBrand().contains("womn"))
                 {
                     Intent i = new Intent(getApplicationContext(), MyWebView.class);
-                    i.putExtra("cost", brandList.get(position).getCost());
+                    i.putExtra("name", brandList.get(position).getNameBrand());
                     startActivity(i);
                 }
-                else if (brandList.get(position).getCost()== 3)
+                else if (brandList.get(position).getNameBrand().contains("Able"))
                 {
                     Intent i = new Intent(getApplicationContext(), MyWebView.class);
-                    i.putExtra("cost", brandList.get(position).getCost());
+                    i.putExtra("name", brandList.get(position).getNameBrand());
                     startActivity(i);
                 }
-                else if (brandList.get(position).getCost()== 4)
+                else if (brandList.get(position).getNameBrand().contains("Everlane"))
                 {
                     Intent i = new Intent(getApplicationContext(), MyWebView.class);
-                    i.putExtra("cost", brandList.get(position).getCost());
+                    i.putExtra("name", brandList.get(position).getNameBrand());
                     startActivity(i);
                 }
-                else if (brandList.get(position).getCost()== 5)
+                else if (brandList.get(position).getNameBrand().contains("Patagonia"))
                 {
                     Intent i = new Intent(getApplicationContext(), MyWebView.class);
-                    i.putExtra("cost", brandList.get(position).getCost());
+                    i.putExtra("name", brandList.get(position).getNameBrand());
                     startActivity(i);
                 }
-                else if (brandList.get(position).getCost()== 6)
+                else if (brandList.get(position).getNameBrand().contains("Madewell"))
                 {
                     Intent i = new Intent(getApplicationContext(), MyWebView.class);
-                    i.putExtra("cost", brandList.get(position).getCost());
+                    i.putExtra("name", brandList.get(position).getNameBrand());
                     startActivity(i);
                 }
-                else if (brandList.get(position).getCost()== 7)
+                else if (brandList.get(position).getNameBrand().contains("Outerknown"))
                 {
                     Intent i = new Intent(getApplicationContext(), MyWebView.class);
-                    i.putExtra("cost", brandList.get(position).getCost());
+                    i.putExtra("name", brandList.get(position).getNameBrand());
                     startActivity(i);
                 }
-                else if (brandList.get(position).getCost()== 8)
+                else if (brandList.get(position).getNameBrand().contains("Tradlands"))
                 {
                     Intent i = new Intent(getApplicationContext(), MyWebView.class);
-                    i.putExtra("cost", brandList.get(position).getCost());
+                    i.putExtra("name", brandList.get(position).getNameBrand());
                     startActivity(i);
                 }
-                else if (brandList.get(position).getCost()== 9)
+                else if (brandList.get(position).getNameBrand().contains("Boden"))
                 {
                     Intent i = new Intent(getApplicationContext(), MyWebView.class);
-                    i.putExtra("cost", brandList.get(position).getCost());
+                    i.putExtra("name", brandList.get(position).getNameBrand());
                     startActivity(i);
                 }
-                else if (brandList.get(position).getCost()== 10)
+                else if (brandList.get(position).getNameBrand().contains("Reformation"))
                 {
                     Intent i = new Intent(getApplicationContext(), MyWebView.class);
-                    i.putExtra("cost", brandList.get(position).getCost());
+                    i.putExtra("name", brandList.get(position).getNameBrand());
                     startActivity(i);
                 }
                 else {
                     Intent i = new Intent(getApplicationContext(), MyWebView.class);
-                    i.putExtra("cost", brandList.get(position).getCost());
+                    i.putExtra("name", brandList.get(position).getNameBrand());
                     startActivity(i);
                 }
             }
@@ -143,7 +143,12 @@ public class ListOfBrandsActivity extends AppCompatActivity {
                 Collections.sort(brandList, new Comparator<Brands>() {
                     @Override
                     public int compare(Brands o, Brands o2) {
-                        return o.getCost() - o2.getCost();
+                        if(o.getCost() - o2.getCost() != 0) {
+                            return o.getCost() - o2.getCost();
+                        }
+                        else return o.getNameBrand().compareTo(o2.getNameBrand());
+
+
                     }
                 });
                 brandAdapter.notifyDataSetChanged();
@@ -156,7 +161,10 @@ public class ListOfBrandsActivity extends AppCompatActivity {
                 Collections.sort(brandList, new Comparator<Brands>() {
                     @Override
                     public int compare(Brands o, Brands o2) {
-                        return o.getCost() - o2.getCost();
+                        if(o.getCost() - o2.getCost() != 0) {
+                            return o.getCost() - o2.getCost();
+                        }
+                        else return o.getNameBrand().compareTo(o2.getNameBrand());
                     }
 
                 });

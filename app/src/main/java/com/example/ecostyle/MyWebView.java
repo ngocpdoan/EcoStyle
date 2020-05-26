@@ -29,37 +29,38 @@ public class MyWebView   extends AppCompatActivity {
         setContentView(R.layout.activity_webview);
 
         Intent mIntent = getIntent();
-        int cost = mIntent.getIntExtra("cost", 0);
-        if(cost == 1) {
+        String name = mIntent.getStringExtra("name");
+        if(name.contains("Pact")) {
             popWeb(pactUrl);
         }
-        else if (cost == 2){
+        else if (name.contains("womn")){
             popWeb(womnUrl);
         }
-        else if (cost == 3){
+        else if (name.contains("Able")){
             popWeb(ableUrl);
         }
-        else if (cost == 4){
+        else if (name.contains("Everlan")){
             popWeb(everlaneUrl);
         }
-        else if (cost == 5){
+        else if (name.contains("Patagonia")){
             popWeb(pataUrl);
         }
-        else if (cost == 6){
+        else if (name.contains("Madewell")){
             popWeb(madewellUrl);
         }
-        else if (cost == 7){
+        else if (name.contains("Outerknown")){
             popWeb(outerknownUrl);
         }
-        else if (cost == 8){
+        else if (name.contains("Tradlands")){
             popWeb(tradlandsUrl);
         }
-        else if (cost == 9){
+        else if (name.contains("Boden")){
             popWeb(bodenUrl);
         }
-        else if (cost == 10){
+        else if (name.contains("Reformation")){
             popWeb(reformationUrl);
         }
+
     }
 
     public void popWeb(String url){
