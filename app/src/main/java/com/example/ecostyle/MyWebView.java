@@ -21,7 +21,17 @@ public class MyWebView   extends AppCompatActivity {
     public String tradlandsUrl= "https://tradlands.com/pages/about-us";
     public String outerknownUrl= "https://www.outerknown.com/pages/sustainability";
     public String pataUrl= "https://www.patagonia.com/sustainable-apparel-coalition.html";
-    public String madewellUrl= "https://www.madewell.com/do-well-initiatives.html";
+    public String petiteUrl= "https://petitestudionyc.com/?location=us";
+    public String elieenUrl= "https://www.eileenfisher.com/";
+    public String maraUrl= "https://marahoffman.com/";
+    public String alternativeUrl= "https://www.alternativeapparel.com/";
+    public String kotnUrl= "https://kotn.com/";
+    public String leviUrl= "https://www.levi.com/US/en_US/";
+    public String lacausaUrl= "https://www.lacausaclothing.com/";
+    public String vettaUrl= "https://www.vettacapsule.com/";
+    public String cuyanaUrl= "https://www.cuyana.com/";
+    public String backbeatUrl= "https://backbeat.co/";
+    public String nisoloUrl= "https://nisolo.com/";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,8 +55,8 @@ public class MyWebView   extends AppCompatActivity {
         else if (name.contains("Patagonia")){
             popWeb(pataUrl);
         }
-        else if (name.contains("Madewell")){
-            popWeb(madewellUrl);
+        else if (name.contains("Petite Studio")){
+            popWeb(petiteUrl);
         }
         else if (name.contains("Outerknown")){
             popWeb(outerknownUrl);
@@ -57,8 +67,35 @@ public class MyWebView   extends AppCompatActivity {
         else if (name.contains("Boden")){
             popWeb(bodenUrl);
         }
-        else if (name.contains("Reformation")){
-            popWeb(reformationUrl);
+        else if (name.contains("Levi")){
+            popWeb(leviUrl);
+        }
+        else if (name.contains("Eileen Fisher")){
+            popWeb(elieenUrl);
+        }
+        else if (name.contains("Mara Hoffman")){
+            popWeb(maraUrl);
+        }
+        else if (name.contains("Alternative Apparel")){
+            popWeb(alternativeUrl);
+        }
+        else if (name.contains("Kotn")){
+            popWeb(kotnUrl);
+        }
+        else if (name.contains("LACAUSA")){
+            popWeb(lacausaUrl);
+        }
+        else if (name.contains("Vetta")){
+            popWeb(vettaUrl);
+        }
+        else if (name.contains("Cuyana")){
+            popWeb(cuyanaUrl);
+        }
+        else if (name.contains("Back Beat Co")){
+            popWeb(backbeatUrl);
+        }
+        else if (name.contains("Nisolo")){
+            popWeb(nisoloUrl);
         }
 
     }

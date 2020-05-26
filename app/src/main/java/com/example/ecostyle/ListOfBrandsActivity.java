@@ -39,7 +39,17 @@ public class ListOfBrandsActivity extends AppCompatActivity {
         brandList.add(new Brands(R.drawable.tradlands, "Tradlands", "$$-$$$", 3));
         brandList.add(new Brands(R.drawable.outer, "Outerknown", "$$-$$$", 3));
         brandList.add(new Brands(R.drawable.pata, "Patagonia", "$-$$", 2));
-        brandList.add(new Brands(R.drawable.madewell, "Madewell", "$-$$", 2));
+        brandList.add(new Brands(R.drawable.petit, "Petite Studio", "$$-$$$", 3));
+        brandList.add(new Brands(R.drawable.eileen, "Eileen Fisher.", "$$-$$$", 3));
+        brandList.add(new Brands(R.drawable.mara, "Mara Hoffman", "$$-$$$", 3));
+        brandList.add(new Brands(R.drawable.alternative, "Alternative Apparel", "$", 1));
+        brandList.add(new Brands(R.drawable.kotn, "Kotn", "$", 1));
+        brandList.add(new Brands(R.drawable.levi, "Levi", "$-$$", 2));
+        brandList.add(new Brands(R.drawable.lacausa, "LACAUSA", "$$-$$$", 3));
+        brandList.add(new Brands(R.drawable.vetta, "Vetta", "$$-$$$", 3));
+        brandList.add(new Brands(R.drawable.cuyana, "Cuyana", "$$$-$$$$", 4));
+        brandList.add(new Brands(R.drawable.backbeat, "Back Beat Co", "$$-$$$", 3));
+        brandList.add(new Brands(R.drawable.nisolo, "Nisolo", "$$-$$$", 3));
 
         brandAdapter = new BrandsAdapter(this, brandList);
         listView.setAdapter(brandAdapter);
@@ -77,7 +87,7 @@ public class ListOfBrandsActivity extends AppCompatActivity {
                     i.putExtra("name", brandList.get(position).getNameBrand());
                     startActivity(i);
                 }
-                else if (brandList.get(position).getNameBrand().contains("Madewell"))
+                else if (brandList.get(position).getNameBrand().contains("Petite Studio"))
                 {
                     Intent i = new Intent(getApplicationContext(), MyWebView.class);
                     i.putExtra("name", brandList.get(position).getNameBrand());
@@ -107,11 +117,72 @@ public class ListOfBrandsActivity extends AppCompatActivity {
                     i.putExtra("name", brandList.get(position).getNameBrand());
                     startActivity(i);
                 }
+                else if (brandList.get(position).getNameBrand().contains("Eileen Fisher"))
+                {
+                    Intent i = new Intent(getApplicationContext(), MyWebView.class);
+                    i.putExtra("name", brandList.get(position).getNameBrand());
+                    startActivity(i);
+                }
+                else if (brandList.get(position).getNameBrand().contains("Mara Hoffman"))
+                {
+                    Intent i = new Intent(getApplicationContext(), MyWebView.class);
+                    i.putExtra("name", brandList.get(position).getNameBrand());
+                    startActivity(i);
+                }
+                else if (brandList.get(position).getNameBrand().contains("Alternative Apparel"))
+                {
+                    Intent i = new Intent(getApplicationContext(), MyWebView.class);
+                    i.putExtra("name", brandList.get(position).getNameBrand());
+                    startActivity(i);
+                }
+                else if (brandList.get(position).getNameBrand().contains("Kotn"))
+                {
+                    Intent i = new Intent(getApplicationContext(), MyWebView.class);
+                    i.putExtra("name", brandList.get(position).getNameBrand());
+                    startActivity(i);
+                }
+                else if (brandList.get(position).getNameBrand().contains("Levi"))
+                {
+                    Intent i = new Intent(getApplicationContext(), MyWebView.class);
+                    i.putExtra("name", brandList.get(position).getNameBrand());
+                    startActivity(i);
+                }
+                else if (brandList.get(position).getNameBrand().contains("LACAUSA"))
+                {
+                    Intent i = new Intent(getApplicationContext(), MyWebView.class);
+                    i.putExtra("name", brandList.get(position).getNameBrand());
+                    startActivity(i);
+                }
+                else if (brandList.get(position).getNameBrand().contains("Vetta"))
+                {
+                    Intent i = new Intent(getApplicationContext(), MyWebView.class);
+                    i.putExtra("name", brandList.get(position).getNameBrand());
+                    startActivity(i);
+                }
+                else if (brandList.get(position).getNameBrand().contains("Cuyana"))
+                {
+                    Intent i = new Intent(getApplicationContext(), MyWebView.class);
+                    i.putExtra("name", brandList.get(position).getNameBrand());
+                    startActivity(i);
+                }
+                else if (brandList.get(position).getNameBrand().contains("Back Beat Co"))
+                {
+                    Intent i = new Intent(getApplicationContext(), MyWebView.class);
+                    i.putExtra("name", brandList.get(position).getNameBrand());
+                    startActivity(i);
+                }
+                else if (brandList.get(position).getNameBrand().contains("Nisolo"))
+                {
+                    Intent i = new Intent(getApplicationContext(), MyWebView.class);
+                    i.putExtra("name", brandList.get(position).getNameBrand());
+                    startActivity(i);
+                }
                 else {
                     Intent i = new Intent(getApplicationContext(), MyWebView.class);
                     i.putExtra("name", brandList.get(position).getNameBrand());
                     startActivity(i);
                 }
+
             }
         });
 
