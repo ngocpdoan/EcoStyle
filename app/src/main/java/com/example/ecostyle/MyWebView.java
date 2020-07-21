@@ -97,6 +97,9 @@ public class MyWebView   extends AppCompatActivity {
         else if (name.contains("Nisolo")){
             popWeb(nisoloUrl);
         }
+        else if (name.contains("Reformation")){
+            popWeb(reformationUrl);
+        }
 
     }
 

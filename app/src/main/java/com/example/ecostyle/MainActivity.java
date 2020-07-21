@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     private Handler sliderHandler = new Handler();
     private Button aboutButton;
     private Button brandButton;
+    private Button findStoresButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +43,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 openListOfBrandsActivity();
+            }
+        });
+
+        findStoresButton = (Button) findViewById(R.id.button3);
+        findStoresButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openGoogleMaps();
             }
         });
 
@@ -110,6 +119,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void openListOfBrandsActivity() {
         Intent intent = new Intent(this, ListOfBrandsActivity.class);
+        startActivity(intent);
+    }
+
+    public void openGoogleMaps() {
+        Intent intent = new Intent(this, PermissionActivity.class);
         startActivity(intent);
     }
 

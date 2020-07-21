@@ -11,7 +11,11 @@
         android:layout_height="200dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="130dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="159dp"
+        android:layout_marginEnd="0dp"
         app:srcCompat="@drawable/image6" />
 
     <TextView
@@ -21,13 +25,13 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="6dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="25dp"
         android:fontFamily="@font/didact_gothic"
         android:text="What is EcoStyle?"
         android:textAlignment="center"
-        android:textSize="35sp"
-        android:textColor="#3F3F3F" />
+        android:textColor="#3F3F3F"
+        android:textSize="35sp" />
 
     <TextView
         android:id="@+id/textView3"
@@ -37,7 +41,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerInParent="true"
         android:layout_marginStart="14dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="81dp"
         android:fontFamily="@font/didact_gothic"
         android:text="EcoStyle is a way of expressing yourself through fashion while still upholding sustainability and ethical practices."
         android:textAlignment="center"
