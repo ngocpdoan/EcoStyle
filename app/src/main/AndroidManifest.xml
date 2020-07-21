@@ -17,6 +17,7 @@
             android:name=".GoogleMapsActivity"
             android:label="@string/title_activity_google_maps"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".PermissionActivity" />
         <activity android:name=".AboutActivity" />
         <activity android:name=".ListOfBrandsActivity" />
         <activity android:name=".MainActivity">

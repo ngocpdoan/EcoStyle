@@ -26,6 +26,7 @@ public class PermissionActivity extends AppCompatActivity {
 
     private Button allowButton;
 
+    @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_permission);
@@ -50,11 +51,11 @@ public class PermissionActivity extends AppCompatActivity {
                             }
 
                             @Override
-                            public void onPermissionDenied(PermissionDeniedResponse permissionDeniedResponse) {
-                                if(permissionDeniedResponse.isPermanentlyDenied()){
+                            public void onPermissionDenied(PermissionDeniedResponse response) {
+                                if(response.isPermanentlyDenied()){
                                     AlertDialog.Builder builder = new AlertDialog.Builder(PermissionActivity.this);
                                     builder.setTitle("Permission Denied")
-                                            .setMessage("Pemrission to access device location is permanently denied. Go to settings to allow permission.")
+                                            .setMessage("Permrission to access device location is permanently denied. Go to settings to allow permission.")
                                             .setNegativeButton("Cancel", null)
                                             .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                                                 @Override
