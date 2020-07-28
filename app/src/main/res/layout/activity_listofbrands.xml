@@ -10,14 +10,14 @@
     <ListView
         android:id="@+id/brands_list"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="597dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="0dp"
-        android:layout_marginTop="49dp"
+        android:layout_marginTop="62dp"
         android:layout_marginEnd="0dp"
         android:layout_marginBottom="0dp" />
 

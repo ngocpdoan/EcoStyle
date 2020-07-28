@@ -15,14 +15,27 @@
         android:layout_height="match_parent"
        />
 
-    <ImageView
-        android:layout_width="156dp"
-        android:layout_height="54dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="232dp"
-        android:src="@drawable/ic_location"
-        android:transformPivotY="-36dp"></ImageView>
+    <com.skyfishjy.library.RippleBackground
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ripple_bg"
+        app:rb_color="#0099CC"
+        app:rb_radius="32dp"
+        app:rb_rippleAmount="4"
+        app:rb_duration="3000"
+        app:rb_scale="6">
+
+        <ImageView
+            android:layout_width="156dp"
+            android:layout_height="54dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="129dp"
+            android:layout_marginTop="313dp"
+            android:src="@drawable/ic_location"
+            android:transformPivotY="-36dp"></ImageView>
+    </com.skyfishjy.library.RippleBackground>
 
     <com.mancj.materialsearchbar.MaterialSearchBar
         style="@style/MaterialSearchBarLight"
@@ -39,6 +52,7 @@
         app:mt_placeholder="Search a place"/>
 
     <Button
+        android:id="@+id/btn_find"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
