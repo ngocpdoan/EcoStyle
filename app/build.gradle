@@ -49,6 +49,12 @@ dependencies {
 
     //Google Places SDK API
     implementation 'com.google.android.libraries.places:places:2.3.0'
+<<<<<<< HEAD
     implementation 'com.google.android.gms:play-services-maps:17.0.0'
     implementation 'com.google.android.gms:play-services-location:17.0.0'
+=======
+
+    // Ripple Map Animation
+    implementation 'com.skyfishjy.ripplebackground:library:1.0.1'
+>>>>>>> 4c79877926e4b94b6975f16f2dfea0a3efa9a9ff
 }

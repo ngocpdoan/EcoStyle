@@ -13,13 +13,16 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
+        <activity android:name=".MapActivity"></activity>
 
-        <meta-data android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCJ-_iu0lcmVh9C2X6Pl_mQsG8WybRhGNg"/>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCJ-_iu0lcmVh9C2X6Pl_mQsG8WybRhGNg" />
+
         <activity
             android:name=".GoogleMapsActivity"
             android:label="@string/title_activity_google_maps"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".PermissionActivity" />
         <activity android:name=".AboutActivity" />
         <activity android:name=".ListOfBrandsActivity" />
