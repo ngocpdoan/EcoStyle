@@ -123,7 +123,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openGoogleMaps() {
-        Intent intent = new Intent(this, PermissionActivity.class);
+        Intent intent = new Intent(this, MapActivity.class);
         startActivity(intent);
     }
 
