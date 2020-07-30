@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">EcoStyle</string>
     <string name="title_activity_google_maps">GoogleMapsActivity</string>
+    <string name="google_map_key">AIzaSyCJ-_iu0lcmVh9C2X6Pl_mQsG8WybRhGNg</string>
 </resources>
