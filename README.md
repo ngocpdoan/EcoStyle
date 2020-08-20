@@ -8,10 +8,10 @@ Did you know that the fashion industry is responsible for **10% of annual global
 ### About EcoStyle :shirt:
 As an effort to combat the detrimental environmental effects of the fashion industry, EcoStyle is an app that promotes the movement towards sustainable fashion. Sustainable fashion is the approach towards ethical fashion production, sourcing, and manufacturing and shifting the fashion industry towards greater ecological integrity and social justice. EcoStyle makes the steps towards ethical fashion and sustainable consumption an easy, stress free process for the common user. With the help of EcoStyle, users are able to learn more about ways to be environmentally conscious, easily browse eco friendly clothing brands, and search for local clothing donation centers.
 
-**EcoStyle is a way of expressing yourself through fashion while still upholding sustainability and ethical practices.**
+**EcoStyle is a way of expressing yourself through fashion while still upholding sustainable practices.**
 
 ### App Walk-through
-<img src="https://i.imgur.com/3yxnyPi.gif" width=300> <img src="https://i.imgur.com/ZmkQ2PZ.gif" width=300> <img src="https://media3.giphy.com/media/ZCCKD3hfmtr3WwV5mm/giphy.gif" width=300> 
+<img src="https://i.imgur.com/3yxnyPi.gif" width=200> <img src="https://i.imgur.com/ZmkQ2PZ.gif" width=200> <img src="https://media3.giphy.com/media/ZCCKD3hfmtr3WwV5mm/giphy.gif" width=200> 
 
 ### App Features
 - User can browse an informative page that teaches different ways to practice sustainability.
