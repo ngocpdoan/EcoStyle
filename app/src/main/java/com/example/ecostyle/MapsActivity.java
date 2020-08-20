@@ -113,7 +113,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 Log.d("onClick", url);
                 GetNearbyPlacesData getNearbyPlacesData = new GetNearbyPlacesData();
                 getNearbyPlacesData.execute(DataTransfer);
-                Toast.makeText(MapsActivity.this,"Nearby Donation Center", Toast.LENGTH_LONG).show();
+                Toast.makeText(MapsActivity.this,"Nearby Donation Centers", Toast.LENGTH_LONG).show();
             }
         });
 
